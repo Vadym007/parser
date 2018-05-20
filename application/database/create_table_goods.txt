@@ -1,0 +1,14 @@
+USE goods;
+CREATE TABLE goods (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  code VARCHAR(50),
+  price INT,
+  wholesale_price INT,
+  availability INT NOT NULL DEFAULT 0,
+  color VARCHAR(50),
+  size VARCHAR(30),
+  description TEXT,
+  photo TEXT,
+  url TEXT
+);
